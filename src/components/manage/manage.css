@@ -1,0 +1,64 @@
+/* manage.css */
+
+.container {
+    margin-top: 50px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tbody tr:hover {
+    background-color: #ddd;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 8px;
+    display: inline-block; /* Added to prevent button from breaking to a new line */
+}
+
+.btn-black {
+    background-color: #333;
+    color: white;
+}
+
+.btn-black:hover {
+    background-color: #555;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.error-msg {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+}
