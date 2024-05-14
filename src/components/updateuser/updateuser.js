@@ -19,7 +19,7 @@ const Updateuser = () => {
     useEffect(() => {
         const fetchUser = async () => {
             try {
-                const response = await fetch(`http://localhost:5000/api/user/${id}`);
+                const response = await fetch(`REACT_APP_API_URL/api/user/${id}`);
                 const data = await response.json();
                 setFormData(data);
             } catch (err) {
@@ -79,7 +79,7 @@ const Updateuser = () => {
         }
 
         try {
-            const response = await fetch(`http://localhost:5000/api/user/${id}`, {
+            const response = await fetch(`REACT_APP_API_URL/api/user/${id}`, {
                 method: "PATCH",
                 headers: {
                     "Content-Type": "application/json"
