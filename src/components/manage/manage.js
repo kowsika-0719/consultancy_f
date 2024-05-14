@@ -11,7 +11,7 @@ const Manage = () => {
 
     const fetchUsers = async () => {
         try{
-            const response = await fetch('REACT_APP_API_URL/api/user');
+            const response = await fetch(`${process.env.REACT_APP_API_URL}/api/user`);
             const data = await response.json();
             setUsers(data);
         }
@@ -30,7 +30,7 @@ const Manage = () => {
 
     const handleDelete = async (userId) => {
         try{
-            const response = await fetch(`REACT_APP_API_URL/api/user/${userId}`, {
+            const response = await fetch(`${process.env.REACT_APP_API_URL}/api/user/${userId}`, {
                 method: "DELETE"
             });
             console.log(response);
